@@ -24,3 +24,12 @@ if (b == 'hello'){
 // Paranthesis are optional when there's only one parameter name: 
     // (singleParam) => { statements }
     // singleParam => { statements }
+
+
+function add (a, b ){
+ return a+b;   
+}
+
+(a,b) => a+b ;
+
+//Arrow Functions

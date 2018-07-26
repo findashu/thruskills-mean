@@ -13,10 +13,12 @@ arr.length; // 5
 
 arr[9] = 1;
 
+//console.log(arr);
+
 // arr[5] until arr[8] are now holes
 //elements kind : HOLEY_ELEMENTS
 
-arr[8];
+arr[8]; // undefined
 // ??
 
 // What are checks will happen to get the value of arr[8]???
@@ -30,7 +32,11 @@ arr[8];
 // hasOwnProperty(Object.prototype, '8');
 
 
-
+// So Finally avoid those things
+// Avoid Holes
+// Avoid out-of-bound reads
+// Avoid elements kind transitions
+// Prefer arrays over array-like objects
 
 
 
@@ -47,4 +53,4 @@ for(var i=0;i<c.length;i++){
     console.log(i)
 }
  
-console.log(Date.now()-start);
+console.log('Total Time ' +(Date.now() - start));

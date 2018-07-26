@@ -1,15 +1,16 @@
-var fs = require('fs');
+ let  url ='localhost',
+      port = 8080,
+      env  = 'dev';   
 
-//var data = fs.readFileSync('me.txt','utf8');
-
-var data = fs.readFile('m.txt','utf8',function(err,data){
-    if(err){
-        console.log(err)
-        console.log(data)
-    }else{
-        console.log(data);
+var server = {
+    url,
+    port,
+    env,
+    myFn () {
+        console.log('ES6 method declaration')
     }
-});
-//console.log(data);
+}
 
-console.log('After fs read');
+console.log(server);
+
+server.myFn();

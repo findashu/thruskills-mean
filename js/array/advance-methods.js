@@ -13,6 +13,8 @@ const inventors = [
     { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
 ];
 
+console.log(inventors);
+
 const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
 
 
@@ -21,24 +23,31 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 // A new array is returned with same length
 
 // Q. Give array of inventors ' first and last name '
-    const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-    console.log(fullNames);
+    //const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+
+    const fullNames = inventors.map((inventor) => `${inventor.first} ${inventor.last}`)
+
+    //console.log(fullNames);
 
 // Filter Method
 // Used to apply filter methodology on an array
 // returns a new array and length mostly less than original array
 
 // Q. Filter the list of inventors for those who were born in the 1500's
+
     let fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
-    console.log(fifteen);
+    //let fifteen = inventors.filter((inventor) => {
+      //  return inventor.year >= 1500 && inventor.year < 1600
+   // })
+    //console.log(fifteen);
 
 // Sort method
 // Accepts one optionally campare method
 // Sorts values according to the returned value(negative, zero, positive )
 
 // 3. Sort the inventors by birthdate, oldest to youngest
-    const ordered = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
-    console.log(ordered);
+    const ordered = inventors.sort((a,b) => a.year > b.year ? -1 : 1);
+    //console.log(ordered);
 
 
 // Reduce Method
@@ -46,10 +55,14 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 // Q. How many years did all the inventors live?
 
-    const totalYear = inventors.reduce((total, inventor) => {
-        return total + (inventor.passed - inventor.year);
-    },0);
-    console.log(totalYear);
+    const totalYear = inventors.reduce(
+        (total, inventor) => {
+            return total + (inventor.passed - inventor.year);
+        },
+        0
+    );
+
+//console.log(totalYear);
 
 
 

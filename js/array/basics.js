@@ -3,7 +3,8 @@
 // array.
 
 // Declaring a variable that contains empty array. Also known as array literal
-    var emp_array = [];
+// array literal     
+var emp_array = [];
 
 // Defining a array that has three elements
     var arr = [1, 2, 3]
@@ -32,7 +33,11 @@
 
     console.log(typeof fixed_length);
     console.log(fixed_length instanceof Array);
-    
-    fixed_length[0];
-    fixed_length[6];
-    
+
+// delete a element
+
+    var del = [1,2,3];
+    delete del[1];
+    console.log(del);
+    console.log(del[1]);
+
