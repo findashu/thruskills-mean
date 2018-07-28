@@ -1,16 +1,11 @@
- let  url ='localhost',
-      port = 8080,
-      env  = 'dev';   
-
-var server = {
-    url,
-    port,
-    env,
-    myFn () {
-        console.log('ES6 method declaration')
+Array.prototype.sum = function() {
+    let res = 0;
+    for(let i =0; i< this.length; i++) {
+        res += this[i];
     }
+    return res;
 }
 
-console.log(server);
+let arr = [1,2,3,4,5];
 
-server.myFn();
+console.log(arr.sum());
