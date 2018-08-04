@@ -1,11 +1,19 @@
-Array.prototype.sum = function() {
-    let res = 0;
-    for(let i =0; i< this.length; i++) {
-        res += this[i];
-    }
-    return res;
-}
+process.stdout.write('Hello STDIO \n');
 
-let arr = [1,2,3,4,5];
+console.log(process.pid);
 
-console.log(arr.sum());
+console.log(process.version);
+
+console.log(process.title);
+
+process.title = 'MY NODE';
+
+console.log(process.title);
+
+console.log(process.platform);
+
+
+console.log(process.cwd());
+
+
+console.log(process.memoryUsage());

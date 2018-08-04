@@ -13,11 +13,9 @@ var emp_array = [];
     console.log(arr[0]);
 
 // Adding / Updating array elements
-
     arr[2] = 'three';
 
 // if you add a new element but leave a gap in the array, those elements in between don't exist and return the undefined value if accessed.
-    
     arr[4] = 'five';
     console.log(arr[3]);
 

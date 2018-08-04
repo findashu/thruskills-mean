@@ -27,6 +27,7 @@ console.log(foo.constructor);
 // The prototype property is a property that is available to you as soon as you define the function.
 // Its initial value is empty object.
 
+
 console.log(foo.prototype);
 console.log(typeof foo.prototype);
 
