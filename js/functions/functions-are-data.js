@@ -1,8 +1,9 @@
 // Functions are data, that means you can create a function and assign it to a variable.
 
-var f = function () {
+var f = function  () {
     return 1;
 }
+
  
 // This way of defining a function is sometimes referred to as function literal notation.
 

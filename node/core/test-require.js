@@ -12,13 +12,17 @@
 
 
 // Importing single functionality or value
-//var temp = require('./global-object-and-process').temperature;
+
+
+var temp = require('./global-object-and-process').temperature;
 
 // Import complete file
 
-var calc = require('./global-object-and-process');
+//var calc = require('./global-object-and-process');
 
 
-// console.log(temp);
+ console.log(temp);
 
-console.log(calc.add(1,2));
+//console.log(calc.add(1,2));
+
+//console.log(calc.temperature)

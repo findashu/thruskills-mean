@@ -20,7 +20,7 @@ function sum(a,b){
 
 // Calling a function
 
-var result = sum(1);
+var result = sum(1,2);
 
 console.log(`Result of function sum => ${result}`);
 
@@ -32,6 +32,7 @@ console.log(`Result of function sum => ${result}`);
 
 var extraParams = sum(2,3,4,5);
 console.log(`Extra params result => ${extraParams}`);
+
 
 // Arguments Keyword
 // You can create functions that are flexible about the number of parameters using 'arguments' keyword.
@@ -47,6 +48,7 @@ console.log(args(1,2,'fdf',23));
 // lets improve add() function to accept any number of arguments
 
 function sum() {
+
     var res = 0;
     for(var i=0; i< arguments.length; i++){
         res += arguments[i];
@@ -59,7 +61,7 @@ console.log(sum(1,2,3,4));
 // Arguments is not an array, but an array like object.
 
 // Default Parameters
-// Function parameters can be assigned default values, while calling the function, if a parameter is omitted, the default value assigned to the parameter is used
+// Function parameters can be assigned default values, while calling the function, if a parameter is omitted, the default value   to the parameter is used
 
 function defaultParams(temp=20,humidity=40){
     return `Temprature is ${temp}, and humidity ${humidity}`

@@ -18,7 +18,6 @@ var a = 10;
 
 var b = 20;
 
-
 // Asynchronous
 
 console.log('Hii');
@@ -36,5 +35,3 @@ console.log('end program')
     // System.out.println('Step -1');
     // Thread.sleep(2000);
     // System.out.println('Step -3');
-
-

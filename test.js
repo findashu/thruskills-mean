@@ -1,19 +1,13 @@
-process.stdout.write('Hello STDIO \n');
+var person = {
+    name:'ashu',
+    age:14
+}
 
-console.log(process.pid);
+var person2 = {
+    name:'ashu',
+    age:13
+}
 
-console.log(process.version);
+console.log(JSON.stringify(person) === JSON.stringify(person2));
 
-console.log(process.title);
-
-process.title = 'MY NODE';
-
-console.log(process.title);
-
-console.log(process.platform);
-
-
-console.log(process.cwd());
-
-
-console.log(process.memoryUsage());
+console.log(person.toString() === person2.toString());//
