@@ -8,5 +8,5 @@
     
     Global and Process
     Event Emitters
-    Stream
+    Streams and Buffers
     Using built-in modules

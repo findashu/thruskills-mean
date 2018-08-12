@@ -7,3 +7,5 @@ server.on('request', function(req,res){
 });
 
 server.listen(3000);
+
+console.log('Server up and running');

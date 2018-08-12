@@ -1,5 +1,7 @@
 let util = require("util");
+
 var EventEmitter = require("events").EventEmitter;
+
 
 var id = 1;
 var database = {
@@ -11,6 +13,7 @@ var database = {
 };
 
 function UserList () {
+    // it will inherit all the properties of EventEmitter
     EventEmitter.call(this);
 }
 
@@ -20,6 +23,7 @@ util.inherits(UserList, EventEmitter);
 UserList.prototype.save = function (obj) {
     obj.id = id++;
     database.users.push(obj);
+
     this.emit("saved-user", obj);  
 };
 

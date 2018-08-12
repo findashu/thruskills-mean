@@ -18,6 +18,8 @@ emitter.on('knock', function() {
     console.log('Who\'s there');
 })
 
+emitter.removeListener('knock', )
+
 
 emitter.on('knock', function(results) {
     console.log('Go away');
@@ -66,9 +68,11 @@ emitter.emit('greet','ashu');
 
 // To remove a listener use removeListener() method 
 // method accepts two parameters one is event name the second is listener function
+
 function greet() {
     console.log('sdfs')
 }
+
 emitter.on('hello', greet)
 emitter.emit('hello')
 
