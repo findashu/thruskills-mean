@@ -1,0 +1,40 @@
+// Numbers
+
+1. WAP to count how many digits in a number
+2. WAP to check number is palindrome or not
+3. WAP to check number is HAPPY number or not (ex.49)
+4. Write a program to check number is strong number or not.
+5. WAP to count how many perfect number b/w 1 to 1000.
+6. WAP to find sum of prime numbers b/w 1 to 1000.
+7. WAP to check entered number is armstrong or not.
+8. WAP to generate first n fibonacci numbers.
+9. WAP to print fibonacci number b/w 1 to 100 which are not prime.
+
+// Arrays
+
+10. WAP to define a method to reverse the array.
+11. Define a method to add the array elements.
+12. WAP to calculate the sum of even number or odd number in a array.
+13. WAP to find first biggest and second biggest element from the element.
+14. WAP to define a method to return number of odd numbers and number of even numbers in an array.
+15. Define a method to add the element into existing array in a specified index.
+16. Delete element from a specified index.
+17. Merge two array element in zig-zag manner.
+18. Define a method to replace the value in specified index.
+19. WAP to count number of times each elements occuring in an array, array having element b/w (0-100) without comparing.
+20. WAP to find the highest sum of 2 continuous numbers and those numbers in an array.
+21. WAP to display the element from the array if you add the elements we should get zero. [5,-6,7,9,-6,4,3,-1,8]
+22. WAP to delete duplicates from the array.
+23. WAP to display duplicate elements.
+
+// Strings
+
+24. WAP to reverse the words in a sentence.
+25. Reverse the sentence.
+26. WAP to count number of occurance of each character in a given string.
+27. WAP to remove the duplicates from the string.
+28. WAP to count how many words in a sentence.
+29. WAP to check two strings are anagram or not.
+
+30. WAP to print 1 to n without using loop.
+31. WAP to calculate the sum of n natural numbers without using loop.

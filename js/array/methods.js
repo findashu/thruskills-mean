@@ -56,5 +56,6 @@ console.log(arr.length);
     // console.log(d);
     // console.log(sp);
     var e = sp.splice(1,2,'a','b','c');
+    
     console.log(e);
     console.log(sp);

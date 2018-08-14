@@ -17,8 +17,7 @@ var person = {
     }
 
 };
-
-// console.log(Object.keys(person));
+console.log(Object.keys(person));
 
 // Object.keys(person).forEach(key => console.log(key, person[key]))
 
@@ -34,11 +33,11 @@ var person = {
 // })
 
 
-console.log(person.hasOwnProperty('helo')); 
+//console.log(person.hasOwnProperty('helo')); 
 
-for( var prop in person) {
-    if(person.hasOwnProperty(prop)){
-        console.log(prop)
-        console.log(person[prop])
-    }
-}
+// for( var prop in person) {
+//     if(person.hasOwnProperty(prop)){
+//         console.log(prop)
+//         console.log(person[prop])
+//     }
+// }
