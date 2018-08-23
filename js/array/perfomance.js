@@ -38,13 +38,12 @@ arr[8]; // undefined
 // Avoid elements kind transitions
 // Prefer arrays over array-like objects
 
-
-
 // Homogeneous elements of an array stored in contiguous memory location
 // Hetrogeneous elements are stored in diffrent-different memory locations
 
 
 var b = [1,2,3,4,5];
+
 var c = [1,'a',true,3,'sds'];
 
 var start = Date.now();
