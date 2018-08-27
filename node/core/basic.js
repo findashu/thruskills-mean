@@ -1,6 +1,6 @@
 // Node is JS runtime environment built upon Chrome-V8
 
-// Node.js is single-threded uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+// Node.js is single-threaded uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
 
 // Blocking - Code

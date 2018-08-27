@@ -2,6 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const appMiddleware = require('./middleware');
+const hbs = require('hbs');
+
+// view engine setup
+app.set('views', __dirname+'/views');
+app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname+'/views/partials');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended : true}));
@@ -9,6 +15,10 @@ app.use(appMiddleware.logger);
 app.use(express.static(__dirname+'/static'));
 
 
+function middle(req,res,next){
+    console.log('hii');
+    next('hello world');
+}
 
 // app.Method(route, handler)
 let data = {
@@ -17,11 +27,39 @@ let data = {
     "app":"web-application"
 }
 
+app.get('/', middle, (req,res) =>{
+    res.send('Application working')
+})
 
-
-app.get('/', function(req,res) {
-    res.send('Hello express');
+app.get('/learning-hbs', function(req,res) {
+    //res.send('Hello express');
+    res.render('learning-hbs',{
+        name:'Learning HBS',
+        htmlTag: '<p>Hello html</p>',
+        data: data,
+        arr: [{name:'pen',color:'red'},{name:'pencil',color:'black'}]
+    });
 });
+
+app.get('/contact', (req,res) => {
+    res.render('contact', {
+        title: 'Contact Page',
+        layout: 'layout'
+    })
+})
+
+app.post('/contact', (req,res) => {
+    var data = req.body;
+    res.json(data);
+})
+
+app.get('/signin', (req,res) => {
+    res.render('signin', {
+        layout: 'layout',
+        title:'Sign In page',
+        nav:true
+    })
+})
 
 
 app.get('/response-code',  (req,res) => {
@@ -46,6 +84,8 @@ app.post('/post-route/:name', appMiddleware.checkUser, function(req,res) {
 app.put('/put-route', function(req,res) {
     res.send('This is put route')
 });
+
+
 
 app.use(appMiddleware.notFound);
 

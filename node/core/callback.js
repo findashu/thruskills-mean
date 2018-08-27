@@ -7,7 +7,6 @@ function myCallback(err, data) {
 }
 
 
-
 function square(num,fn) {
     if(typeof num === 'number') {
         var res = num * num;
@@ -18,4 +17,3 @@ function square(num,fn) {
 }
 
 square(2,myCallback);
-console.log('any');

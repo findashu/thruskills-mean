@@ -3,7 +3,6 @@ module.exports.logger = function(req,res,next) {
     next();
 }
 
-
 module.exports.checkUser = function(req,res,next) {
     console.log(req.params.name);
     if(req.params.name == 'ashu') {
@@ -13,9 +12,11 @@ module.exports.checkUser = function(req,res,next) {
 };
 
 module.exports.notFound = function(req,res,next) {
-    res.status(404).send('Not found');
+    // res.status(404).send('Not found');
+    res.render('404', {
+        title:'Not found'
+    })
 };
-
 
 module.exports.serverError = function (err,req,res,next){
     console.log(err)

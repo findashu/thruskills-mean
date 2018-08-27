@@ -74,17 +74,3 @@ console.log(sliced_buffer.toString());
 // Probably the most used function, check the length of buffer.
 
 console.log(sliced_buffer.length)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

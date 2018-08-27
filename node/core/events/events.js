@@ -8,7 +8,7 @@
 
 let events = require('events');
 
-let emitter = new events.EventEmitter();
+let emitter = new events.EventEmitter(); 
 
 // We can have more than one listener for each event, by default Node allows up to 10 listeners on one event at once, if more are created, node will issue a warning.
 

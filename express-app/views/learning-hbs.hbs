@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>{{ name }}</h2>
+    {{{ htmlTag }}}
+    <p>Rendering HBS Page</p>
+    <p>{{ data.name }}</p>
+    <ul>
+        {{#each data}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    
+    <ul>
+        {{#each arr}}
+        <li>{{this.name}} {{this.color}}</li>
+        {{/each}}
+    </ul>
+
+    {{#if score}}
+    <p>{{score}}</p>
+    {{else}}
+    <p>Score is not available</p>
+    {{/if}}
+
+
+
+</body>
+</html>

@@ -19,3 +19,6 @@ fs.readFile('file.txt', {'encoding':'utf8'}, function(err,data) {
 });
 
 console.log('End reading');
+
+
+
