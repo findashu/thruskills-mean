@@ -5,18 +5,21 @@ let adr = 'http://localhost:3000/default.html?year=2018&month=feb'
 
 let q = url.parse(adr,true);
 
-console.log(q.query.year);
+console.log(q)
+
+//console.log(q.query.year);
 
 
 
 
-console.log(q.host);
+// console.log(q.host);
 
-console.log(q.pathname);
+// console.log(q.pathname);
 
-console.log(q.search);
+// console.log(q.search);
 
-let query = q.query;
+// let query = q.query;
 
-console.log(query.month);
+// console.log(query.month);
+
 

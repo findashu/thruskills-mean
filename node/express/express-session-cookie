@@ -1,0 +1,31 @@
+What sessions actually are:
+
+=> Data is stored on the server side.
+=> A cookie is issued which contains an ID.
+=> This ID gets send back to the server on every request, due to the fact that the browser sends the cookies.
+=> Now the server can re-associate the ID in the cookie - commonly called Session ID or short SID - with the session data stored on the server.
+
+Where this data gets stored on the server
+MemoryStore --
+
+Express comes with a built-in session store called MemoryStore, which is the default when you don’t specify one explicitly.
+
+MemoryStore uses the application RAM for storing session data and works right out of the box, without the need for any database. Seeing how easily it is to set up, you might be tempted to make it the session store of your choice, but it is not recommended to do so because of the following reasons:
+
+1. Memory consumption will keep growing with each new session.
+2. In case the app is restarted for any reason; all session data will be lost.
+3. Session data cannot be shared by other instances of the app in a cluster.
+
+
+ Cookie
+==========
+
+
+A cookie is usually a small piece of data that gets sent between a web server to your web browser. It allows the server to store information relevant to a specific user. 
+
+One common use for cookies is to store session data. This works in the following way.
+
+The server issues a cookie that gets sent to the web browser and stored for a period of time (called the expiration time).
+When a user makes a subsequent request to the web server, this cookie gets sent along with the request, and the server can read the information that is in it.
+The server can manipulate the cookie if it needs to, and then sends it back to the browser.
+

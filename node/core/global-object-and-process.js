@@ -9,7 +9,7 @@
 
 // Ex. __filename which gives the absolute path and then the file name
 // __dirname will get you only the path of the currently runing script.
-
+ 
 console.log(__dirname);
 
 console.log(__filename);

@@ -25,8 +25,3 @@ server.listen(3002, (err) => {
 });
 
 
-
-// http://localhost:3000/index.html?name=ashu&last=mishra
-
-
-
