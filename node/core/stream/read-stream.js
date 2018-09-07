@@ -4,7 +4,6 @@ let fs = require('fs');
 
 var data = '';
 
-console.log(__dirname)
 
 let readerStream = fs.createReadStream(__dirname+'/input.txt');
 

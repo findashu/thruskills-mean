@@ -15,4 +15,4 @@ fs.createReadStream(__dirname+'/input.txt.gz')
     .pipe(zlib.createGunzip())
     .pipe(fs.createWriteStream('otpt.txt'));
 
-console.log('End Program');
+// console.log('End Program');

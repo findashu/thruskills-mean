@@ -6,4 +6,5 @@ users.on("saved-user", function (user) {
  });
 
 users.save({ name: "Jane Doe", occupation: "manager" });
+
 users.save({ name: "ashu", occupation: "developer" });

@@ -12,7 +12,7 @@ let emitter = new events.EventEmitter();
 
 // We can have more than one listener for each event, by default Node allows up to 10 listeners on one event at once, if more are created, node will issue a warning.
 
-// We can change this by using setMaxListeners();
+// We can change this by using setMaxListeners(); 
 
 emitter.on('knock', function() {
     console.log('Who\'s there');

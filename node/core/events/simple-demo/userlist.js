@@ -2,8 +2,9 @@ let util = require("util");
 
 var EventEmitter = require("events").EventEmitter;
 
-
+ 
 var id = 1;
+
 var database = {
     users: [
         { id: id++, name: "Joe Smith",  occupation: "developer"    },
@@ -13,7 +14,7 @@ var database = {
 };
 
 function UserList () {
-    // it will inherit all the properties of EventEmitter
+    // it will inherit all the properties of EventEmitter own property
     EventEmitter.call(this);
 }
 

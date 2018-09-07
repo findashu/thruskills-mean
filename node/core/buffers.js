@@ -60,7 +60,13 @@ const joined_buffer = Buffer.concat([buffer_string]);
 
 console.log(joined_buffer.toString('utf8'));
 
-// You can compare two buffers together. It returns 1 if first buffer is greater than second one, -1 if it’s not and 0 if both matches.
+
+//Compares buf with target and returns a number indicating whether buf comes before, after, or is the same as target in sort order. Comparison is based on the actual sequence of bytes in each Buffer.
+
+// 0 is returned if target is the same as buf
+// 1 is returned if target should come before buf when sorted.
+// -1 is returned if target should come after buf when sorted.
+
 
 console.log(buffer_string.compare(buffer_array));
 console.log(buffer_array.compare(buffer_string));

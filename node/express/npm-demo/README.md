@@ -4,6 +4,7 @@
     npm install <package_name> --save (install and adds package.json)
     npm install <package_name> --save-dev (dev dependency)
     npm install <package_name> -g (install globally)
+    npm uninstall <package_name>
     npm ls (list of packages)
 
 ## In Production 

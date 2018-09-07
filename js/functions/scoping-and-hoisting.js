@@ -38,3 +38,5 @@ f();
 // Only the declaration is hoisted, meaning only the presence of variable is moved to the top.
 
 // In ES6, variables declared by the let keyword are hoisted to block scope. However, referencing the variable before its declaration is an error.
+
+
