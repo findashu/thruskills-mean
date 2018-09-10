@@ -1,0 +1,131 @@
+1. List databases
+    show dbs
+
+2. Use db (switch to the database)
+    use DATABASE_NAME
+    
+    Note! if the db exists, it will switch to it, if not it will still switch and it assumes you are creating a new db
+
+3. Show collections
+    show collections
+
+4. Create a collections
+    db.createCollection("users")
+
+5. Insert a document to the collections
+    db.users.insertOne({
+        "name": "Manohar Negi",
+        "email": "mnegi@abc.com",
+        "password": "supersecret",
+        "address": "JP Nagar, Bangalore",
+        "mobile": 789263311
+    })
+
+6. Finding the documents
+    Find all
+        db.users.find()
+    Filter by name
+        db.users.find({name: "Manohar Negi"})
+
+7. Projections - getting the colums
+    db.users.find(
+        { },
+        { email: 1, password: 1 , mobile: 0}
+    )
+
+8. Conditions
+    // mobile not equal (ne)
+    db.users.find(
+        { mobile: { $ne: 789263311 } }
+    )
+
+    // AND criteria
+    db.users.find(
+        {password: "supersecret", mobile: 789263311}
+    )
+
+    // OR criteria
+    db.users.find(
+        { $or: [ {password: "supersecret"} , { mobile: 789263311 } ] }
+    )
+
+    // greater than (gt)
+    db.users.find(
+        { age: { $gt: 25 } }
+    )
+
+    // less than (lt)
+    db.users.find(
+        { age: { $lt: 25 } }
+    )
+
+    // lte = less than or equal
+    db.users.find(
+        { age: { $gt: 25, $lte: 50 } }
+    )
+
+    //WHERE name like "%ka%"
+    db.users.find( { name: /ka/ } )
+
+    // WHERE name like "Vi%"
+    db.users.find( { name: /^Vi/ } )
+    or
+    db.users.find( { name: { $regex: /^Vi/ } } )
+
+9. Sorting
+    //ORDER BY name ASC
+    db.users.find( ).sort({ name: 1 })
+
+    //ORDER BY name DESC
+    db.users.find( ).sort({ name: -1 })
+
+10. Count
+    //SELECT COUNT(*)
+    db.users.count()
+
+    //SELECT COUNT(user_id)
+    db.users.count( { status: { $exists: true } } )
+    db.users.count( { status: "inactive" } )
+    db.users.find( { age: { $gt: 30 } } ).count()
+
+11. distinct
+    // SELECT DISTINCT(status)
+    db.users.distinct( "status" )
+
+12. Limit
+
+    //LIMIT 1
+    db.users.findOne()
+    or
+    db.users.find().limit(1)
+
+    //LIMIT 5 SKIP 10
+    db.users.find().limit(5).skip(10)
+
+13. Explain the query
+    db.users.find( { status: "active" } ).explain()
+
+14. Update the document
+    //ADD status 
+    db.users.updateMany(
+        { },
+        { $set: { create_at: new Date() } }
+    )
+
+    // modify the existing
+    db.users.updateMany({ name: { $regex: /^Vi/ } } ,{ $set: {status: 'inactive'}})
+
+    //DROP COLUMN j
+    db.users.updateMany(
+        { },
+        { $unset: { "join_date": "" } }
+    )
+
+15. Create index
+    db.users.createIndex( { email: 1 } )
+
+16. Delete the collection
+    db.users.drop()
+
+17. Drop the database
+    db.dropDatabase()

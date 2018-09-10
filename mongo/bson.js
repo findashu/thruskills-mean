@@ -1,4 +1,5 @@
-// Mongodb actually stores data as BSON or binary JSON
+// Mongodb actually stores data as BSON or Binary JSON
+
 // Mongodb drivers send and recieve data as BSON and when data written to mongodb, its stored as BSON.
 
 // On the application side, mongodb drivers map BSON to whatever native data types are most appropriate for a given programming language.

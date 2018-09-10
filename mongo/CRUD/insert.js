@@ -13,7 +13,7 @@ db.movies.insertMany([
     {"name":"JS"},
     {"name":"JS"},
     {"name":"JS"}
-])
+]);
 
 // we can pass optional second to insertMany Command
 // To ignore error for duplicate values add second parameter {"ordered":false}
