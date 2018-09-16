@@ -28,4 +28,3 @@ One common use for cookies is to store session data. This works in the following
 The server issues a cookie that gets sent to the web browser and stored for a period of time (called the expiration time).
 When a user makes a subsequent request to the web server, this cookie gets sent along with the request, and the server can read the information that is in it.
 The server can manipulate the cookie if it needs to, and then sends it back to the browser.
-

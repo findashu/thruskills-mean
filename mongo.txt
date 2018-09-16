@@ -15,7 +15,7 @@
 5. Insert a document to the collections
     db.users.insertOne({
         "name": "Manohar Negi",
-        "email": "mnegi@abc.com",
+        "email": "ashu@abc.com",
         "password": "supersecret",
         "address": "JP Nagar, Bangalore",
         "mobile": 789263311
