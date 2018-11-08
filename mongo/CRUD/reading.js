@@ -57,14 +57,12 @@ db.authors.find({'tags.0':'Jeff Bridges'});
 
 // Store returned cursor in a variable and iterate it one by one
 
-var c = db.authors.find();
+var req = db.authors.find();
 
-var doc = function() {return c.hasNext() ? c.next() : null};
+var doc = function() {return req.hasNext() ? req.next() : null};
 
 // To check objects left in a batch
-c.objsLeftInBatch();
-
-
+req.objsLeftInBatch();
 
 // Projection => Projection is a handy way of reducing the size of the data returned for any one query
 // By default mongodb returns all the fields in all matching documents for queries.
@@ -85,11 +83,11 @@ db.authors.find({}, {name:1, _id:0});
 
 // Comparision Operator
     // $eq => equal operator
-    // $gt => 
-    // $gte => 
-    // $lt => 
-    // $lte => 
-    // $ne => 
+    // $gt => greater than
+    // $gte => greater than equalTO
+    // $lt => less than
+    // $lte => less than equal to
+    // $ne => not equal
     // $in => 
     // $nin => 
 

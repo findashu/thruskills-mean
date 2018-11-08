@@ -7,7 +7,7 @@ db.users.deleteMany({"name":"ashu"})
 
 //remove => Delete a single document or all documents that match a specified filter.
 
-db.users.remove({query})
+db.users.remove({filter})
 
 // findOneAndDelete(query, options)
 // passing 1 to sort documents in ascending order 

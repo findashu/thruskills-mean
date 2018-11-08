@@ -19,7 +19,3 @@ console.log(isNaN('100'));
 // isFinite()
 
 console.log(isFinite(1e309));
-
-
-
-

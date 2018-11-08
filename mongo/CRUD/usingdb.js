@@ -8,6 +8,9 @@
 
 // To list the collections
 
+// show collections
+
+
 // Create Collection
 
 // db.createCollection('<collection_name>')

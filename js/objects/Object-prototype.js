@@ -31,6 +31,7 @@ console.log(foo.constructor);
 console.log(foo.prototype);
 console.log(typeof foo.prototype);
 
+
 // You can augment this empty object with properties and methods. They won't have any effect on the foo() function itself; they'll only be used if you call foo() as a constructor.
 
 
@@ -48,7 +49,7 @@ Gadget.prototype.price = 100;
 Gadget.prototype.rating = 3;
 Gadget.prototype.getInfo = function() {
     return `Rating ${this.rating} Price ${this.price}`
-}
+} 
 
 // Using the prototype's methods and properties
 
@@ -78,7 +79,7 @@ console.log(newToy.get('price'));
 // Now from here things will get a bit confusing 
 
 
-// When you try to access a property of newtoy, say, newtoy.name, the JavaScript engine looks through all the properties of the object searching for one called name, and if it finds it, it returns its value
+// When you try to access a property of newtoy, say, newtoy.name, the JavaScript engine looks through all the properties of the object searching for one called 'name', and if it finds it, it returns its value
 
 console.log(newToy.name);
 

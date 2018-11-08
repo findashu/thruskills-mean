@@ -32,3 +32,4 @@
     a.forEach(function(element, index, array) {
         console.log('Iterating through forEach '+element)
     })
+

@@ -33,7 +33,7 @@ db.users.updateMany({name:'TS'},{$unset:{createdOn: 1}})
 
 // 1.upsert : Boolean => It will create a document and insert a document if query didnt find any matching doc. By default its false
 //2.multi : Boolean =>  If set to true, updates multiple documents that meet the query criteria. If set to false, updates one document. The default value is false.
-//3 .returnNewDocument: By default mongo does not return updated document to get updated document pass returnNewDocument in options, accepts boolean value by default its false.
+//3 .returnNewDocument: By default mongo does not return updated document, to get updated document pass returnNewDocument in options, accepts boolean value by default its false.
 
 
 // findOneAndUpdate()

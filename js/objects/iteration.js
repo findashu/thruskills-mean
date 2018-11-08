@@ -19,7 +19,7 @@ var person = {
 };
 console.log(Object.keys(person));
 
-// Object.keys(person).forEach(key => console.log(key, person[key]))
+Object.keys(person).forEach(key => console.log(key, person[key]))
 
 
 // for (const key of Object.keys(person)) {
