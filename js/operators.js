@@ -62,3 +62,5 @@
     // true (Both Strings, equal values)
     // true === true
     // true (Both Booleans, equal values)
+
+    // 77 == '77'
