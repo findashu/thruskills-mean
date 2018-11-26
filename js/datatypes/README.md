@@ -61,7 +61,7 @@ var s = "some characters";
 typeof s
 ```
 
-##Special Characters
+## Special Characters
 
 There are also strings with special meanings, as listed in the following table:
 

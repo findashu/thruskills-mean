@@ -82,6 +82,11 @@ console.log(s.substring(1,5));
 
 // difference b/w slice and substring
 
+//The difference between these two methods is how they treat negative arguments. substring() treats them as zeros, while slice() adds them to the length of the string. So, if you pass parameters (1, -1) to both methods, it's the same as substring(1,0) and slice(1,s.length-1):
+
+s.slice(1, -1); //"ouch potat"
+s.substring(1, -1); //"C"
+
 // Note that the second parameter you pass is the end position, not the length of the piece
 
 
