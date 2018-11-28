@@ -82,7 +82,17 @@ console.log(s.substring(1,5));
 
 // difference b/w slice and substring
 
-//The difference between these two methods is how they treat negative arguments. substring() treats them as zeros, while slice() adds them to the length of the string. So, if you pass parameters (1, -1) to both methods, it's the same as substring(1,0) and slice(1,s.length-1):
+// substring
+// If start > stop, then substring will swap those 2 arguments.
+// If either argument is negative or is NaN, it is treated as if it were 0.
+// Distinctions of slice():
+
+
+// slice
+
+// If start > stop, slice() will NOT swap the 2 arguments.
+// If start is negative: sets char from the end of string, exactly like substr() in Firefox. This behavior is observed in both Firefox and IE.
+// If stop is negative: sets stop to: string.length – Math.abs(stop) (original value), except bounded at 0 (thus, Math.max(0, string.length + stop)) 
 
 s.slice(1, -1); //"ouch potat"
 s.substring(1, -1); //"C"
