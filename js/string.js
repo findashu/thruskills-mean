@@ -24,7 +24,7 @@ console.log(obj.toString());
 
 // The primitive strings are not objects, so they don't have any methods or properties
 
-//* String objects are being created (and then destroyed) behind the scenes every time you treat a primitive string as if it were an object
+//* String objects are being created (and then destroyed) behind the scenes every time you treat a primitive string as if it were an object.
 
 console.log(primitive.length);
 
@@ -80,19 +80,23 @@ console.log(s.slice(1,5));
 
 console.log(s.substring(1,5));
 
-// difference b/w slice and substring
+// Difference b/w slice and substring
+
+//When JavaScript 1.2 was introduced with Netscape 4.0, they wanted to add the behavior of allowing negative indexes to mean distances from the end of the string. They couldn't change substring to have this new behavior because it would break backward compatibility with scripts that expected negative indexes to be treated as 0, so they had to create a new function to support the added feature. This function was called slice, and was implemented on Array as well as String.
+
 
 // substring
 // If start > stop, then substring will swap those 2 arguments.
 // If either argument is negative or is NaN, it is treated as if it were 0.
+
+
 // Distinctions of slice():
 
-
-// slice
 
 // If start > stop, slice() will NOT swap the 2 arguments.
 // If start is negative: sets char from the end of string, exactly like substr() in Firefox. This behavior is observed in both Firefox and IE.
 // If stop is negative: sets stop to: string.length – Math.abs(stop) (original value), except bounded at 0 (thus, Math.max(0, string.length + stop)) 
+
 
 s.slice(1, -1); //"ouch potat"
 s.substring(1, -1); //"C"

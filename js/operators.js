@@ -18,7 +18,10 @@
     // 7. Less than or equal <=
 
 // Arithmetic Operators
-
+    // Addition +
+    // Substraction -
+    // Multiplication *
+    // Division /
     // 1. Remainder %
     // 2. Increment ++
     // 3. Decrement --
