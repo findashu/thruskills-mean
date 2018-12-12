@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Target Event</title>
+    <style>
+    div {
+        height: 100px;
+        width: 25%;
+        float:left;
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    
+    <script>
+    for(var i = 1; i<=16; i++) {
+        var mydiv = document.createElement('div');
+        document.body.appendChild(mydiv)
+    }
+
+    function random(n) {
+        return Math.floor(Math.random()*n)
+    }
+
+    function bgColor() {
+        return `rgb(${random(255)},${random(255)},${random(255)})`
+    }
+
+
+    var divs = document.querySelectorAll('div');
+    console.log(divs)
+    for(var i = 0; i< divs.length; i++) {
+        divs[i].onclick = function(e) {
+            e.target.style.backgroundColor = bgColor();
+        }
+    }
+
+    </script>
+
+
+
+</body>
+</html>

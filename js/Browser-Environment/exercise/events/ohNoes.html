@@ -9,12 +9,23 @@
     
       <script>
         // Step 1: Find the element we want the event on
-        
+
+        var anc = document.querySelector('a');
+
         // Step 2: Define the event listener function
+
+        function myHandler (e) {
+            e.preventDefault()
+            var aud = document.createElement('audio');
+            document.body.appendChild(aud);
+            aud.src = anc.href;
+            aud.play();
+        }
         
         // Step 3: Attach event listener to element
-        
-        
+
+        anc.onclick = myHandler;
+                
       </script>
     </body>
 </html>

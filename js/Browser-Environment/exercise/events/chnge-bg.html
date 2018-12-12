@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chnage BG</title>
+</head>
+<body>
+    <button>Click Me</button>
+
+    <script>
+
+
+    function random(n) {
+        return Math.floor(Math.random()*n)
+    }
+
+
+    console.log(random(255));
+    
+    var btn = document.querySelector('button');
+    var bd = document.body;
+    btn.onclick = function () {
+        bd.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+    }
+
+    </script>
+</body>
+</html>
