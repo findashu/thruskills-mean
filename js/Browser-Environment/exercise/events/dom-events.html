@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom Events</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <p></p>
+
+    <script>
+    
+    var btn = document.querySelector('button');
+
+    function myHandler() {
+        alert('Hi');
+
+        btn.removeEventListener('click', myHandler2)
+    }
+
+    function myHandler2() {
+        var para = document.querySelector('p');
+        para.innerText = 'Hey Click'
+    }
+    
+    
+    btn.addEventListener('click', myHandler)
+
+    btn.addEventListener('click', myHandler2)
+
+
+
+
+    
+    
+    </script>
+
+
+
+</body>
+</html>

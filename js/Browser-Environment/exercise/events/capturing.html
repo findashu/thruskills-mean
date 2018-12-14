@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Bubbling</title>
+    <style type="text/css">
+        div {
+            display: table-cell;
+            border : 1px solid black;
+            padding :25px;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div id="div1">DIV1
+
+        <div id="div2">DIV2
+
+            <button>Click</button>
+        </div>
+    </div>
+
+
+    <script>
+    var outerDiv = document.getElementById('div1');
+    var innerDiv = document.getElementById('div2');
+    var btn = document.querySelector('button');
+
+   function div1() {
+        alert('div 1')
+        outerDiv.style.border = '1px solid red'
+    }
+
+     function div2() {
+        alert('div 2')
+
+        innerDiv.style.border = '1px solid red'
+    }
+
+    function btnn(e) {
+        // stop bubbling
+        //e.stopPropagation();
+        alert('btn')
+
+        btn.style.border = '1px solid red'
+    }
+
+    outerDiv.addEventListener('click', div1, true);
+    innerDiv.addEventListener('click', div2,true);
+    btn.addEventListener('click', btnn,true);
+    
+    
+    
+    </script>
+
+
+</body>
+</html>
