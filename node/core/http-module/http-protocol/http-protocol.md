@@ -13,7 +13,7 @@ Modern day web applications use the Hypertext Transfer Protocol, commonly abbrev
 
 URL is short for Uniform Resource Locator and is used to identify the address of a resource on the Web.
 
-![alt text](https://github.com/findashu/thruskills-mean/tree/master/node/core/http-module/http-protocol/images/url.png "url image")
+![alt text](https://cdn.jsdelivr.net/gh/findashu/thruskills-mean@master/node/core/http-module/http-protocol/images/url.png "url image")
 
 ### A URL typically consists of the following components: 
 
