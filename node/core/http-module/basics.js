@@ -10,18 +10,14 @@ var server = http.createServer(function(req,res) {
 
     console.log(req);
 
-    res.writeHead(200, {'Content-Type':'text/html'});
+    // res.writeHead(200, {'Content-Type':'text/html'});
 
-    res.end('Hello world');
+    res.statusCode(200).end('Hello world');
 })
 
 // To start the server, simply call its listen function passing in the port number 
 
 server.listen(3002, (err) => {
-
     if(err) console.log(err);
     console.log('Server listening on port ', 3002);
-
 });
-
-

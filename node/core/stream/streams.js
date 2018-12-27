@@ -11,7 +11,7 @@ const fs  = require('fs');
 //     if(error) {
 //        return console.log(error)
 //     }
-//     // console.log(data)
+     // console.log(data)
 // });
 
 //synchronous
@@ -36,7 +36,7 @@ const fs  = require('fs');
 
 // fs.writeFileSync(__dirname+'/message.txt', 'Hello Node.js');
 
-// fs.readdir(__dirname, (err, data) => {
-//     if (err) throw err
-//     console.log(data);
-// })
+fs.readdir(__dirname, (err, data) => {
+    if (err) throw err
+    console.log(data);
+})

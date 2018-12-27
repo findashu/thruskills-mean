@@ -1,3 +1,11 @@
+//The EventEmitter is a module that facilitates communication between objects in Node. EventEmitter is at the core of Node asynchronous event-driven architecture. Many of Node’s built-in modules inherit from EventEmitter.
+
+//The concept is simple: emitter objects emit named events that cause previously registered listeners to be called. So, an emitter object basically has two main features:
+
+// Emitting name events.
+// Registering and unregistering listener functions.
+// (ex: simple -demo)
+
 // Events == Node Observer Pattern
 
 // We have observers or eventlistens on a subject
@@ -90,6 +98,11 @@ emitter.removeAllListeners('knock');
 // Remove all listeners from all the events
 
 emitter.removeAllListeners();
+
+
+// Most of Node’s objects — like HTTP requests, responses, and streams — implement the EventEmitter module so they can provide a way to emit and listen to events.
+
+// The simplest form of the event-driven nature is the callback style of some of the popular Node.js functions — for example, fs.readFile. In this analogy, the event will be fired once (when Node is ready to call the callback) and the callback acts as the event handler.
 
 
 

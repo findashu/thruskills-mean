@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.myHead {
+    text-align: center;
+    background-color: antiquewhite;
+    padding:20px;
+    margin-bottom: 30px;
+}
+
+.boxes {
+    width:100%;
+    padding:20px;
+    background-color: aquamarine;
+    position: absolute;
+}
+
+.box {
+    width:60%;
+    padding:20px;
+    text-align: center;
+    margin:0px auto;
+}
+
+.box1 {
+    background-color: blue; 
+}
+
+.box2 {
+    background-color: red; 
+    position: relative;
+    top:20px;
+    left: 20px; 
+}
+
+.box3 {
+    background-color: green; 
+}
+  
+.box4 {
+    background-color: yellow; 
+}
+
+.fakediv {
+    height: 1000px;
+}
