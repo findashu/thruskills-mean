@@ -8,5 +8,5 @@
     
     Global and Process
     Event Emitters
+    HTTP Module
     Streams and Buffers
-    Using built-in modules (http, url, fs)

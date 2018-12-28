@@ -32,3 +32,14 @@ URL is short for Uniform Resource Locator and is used to identify the address of
 HTTP defines a handful of methods, also called “verbs”, that a client may use in order to describe the type of request being made.
 
 Each request can be modeled as doing a specific action on a resource. For example, a client may request to create, delete, update or simply read from a resource. In HTTP this corresponds to making POST, DELETE, PUT or GET requests respectively.
+
+**GET**
+
+* Usually GET request used to read the resource from server.
+* Request Body won't be available.
+* With GET request you can send some data to server using `URL Query String`.
+* Length of URL is limited to `2044` characters, meaning we cannot send too much data in query string as well.
+
+**POST**
+
+* 
