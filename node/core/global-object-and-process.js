@@ -52,6 +52,40 @@ console.log(module);
 // Each Node.js process has a set of built-in functionality, accessible through the global process module.
 //It doesn't need require - it is somewhat literally a wrapper around the currently executing process, and many of the methods it exposes are actually wrappers around calls into some of Node's core C libraries.
 
+
+//process.pid OS Process ID
+console.log(process.pid);
+
+//process.version   node version
+console.log(process.version)
+
+// process.title //by default set to node, but it can be set to anything u want.
+
+console.log(process.title);
+
+// process.platform // platform
+
+console.log(process.platform);
+
+
+// Methods
+
+// process.cwd()
+console.log(process.cwd());
+
+// process.exit() Ends the process with the specified code. If omitted, exit uses the 'success' code 0.
+process.exit(code =0)
+
+// process.kill(pid,signal) 
+
+
+//process.memoryUsage() method returns an object describing the memory usage of the Node.js process measured in bytes.
+console.log(process.memoryUsage());
+
+
+
+
+
 //Events
 
 // There are two built-in events worth noting
@@ -75,31 +109,5 @@ process.on('uncaughtException', function (err) {
 exports.log = function() {
     process.stdout.write(format.apply(this, arguments) + '\n');
 };
-
-// Other Properties
-
-//process.pid OS Process ID
-console.log(process.pid);
-
-//process.version   node version
-console.log(process.version)
-
-// process.title //by default set to node, but it can be set to anything u want.
-
-console.log(process.title);
-
-// process.platform // platform
-
-console.log(process.platform);
-
-
-// Methods
-
-// process.cwd()
-console.log(process.cwd());
-
-
-//process.memoryUsage() method returns an object describing the memory usage of the Node.js process measured in bytes.
-console.log(process.memoryUsage());
 
 //https://nodejs.org/api/process.html

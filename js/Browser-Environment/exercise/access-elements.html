@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Easy Ways To Access Elements</title>
+    </head>
+
+    <body>
+        <p >Hello JS</p>
+        <p id="js" >Hello HTML</p>
+        <p id="js" class="myClass urClass anotherClass"> N Dom</p>
+        <p class="anotherClass"></p>
+
+
+        <button id="btn">Animated Button</button>
+
+        <script>
+
+        // 
+        var paragraphs = document.getElementsByTagName('p');
+
+        var firstPara = paragraphs[0];
+
+        firstPara.innerText = 'Hello World'
+
+        // getElementById
+        
+        var para2 = document.getElementById('js');
+
+        console.log(para2);
+        
+
+        var btn = document.getElementById('btn').style;
+            
+        btn.visibility = 'hidden'
+
+
+        function toggle () {
+            btn.visibility = (btn.visibility === 'hidden') ?'visible' : 'hidden'
+        }
+
+        //setInterval(toggle, 1000);
+
+
+        var p3 =  document.getElementsByClassName('anotherClass');
+
+        var a1 = document.querySelector('p');
+
+        var a2 = document.querySelector('.anotherClass');
+
+        var a3 = document.querySelector('#js');
+
+        var all = document.querySelectorAll('p');
+
+
+
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+
+        console.log(all); 
+
+
+
+
+        console.log(p3);
+
+
+
+        </script>
+
+
+
+    </body>
+
+
+</html>

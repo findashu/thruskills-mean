@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com" title="Google Search">Google</a>
+    <p class="myClass">Hello World</p>
+    <p>Hello JS <em>World</em></p>
+
+    <script>
+        // Access html tag/ element
+        var ht = window.document.documentElement;
+
+        // select body 
+
+        var bd = ht.childNodes[2]
+
+        // check body has childNodes
+
+        if(bd.hasChildNodes()) {
+
+            // select paragraph 
+
+            var p3 = bd.childNodes[3];
+
+            // change innerText
+            p3.innerText = 'My World';
+            
+            // apply style
+            p3.style.color = 'red';
+            
+        }
+    </script>
+
+
+</body>
+</html>

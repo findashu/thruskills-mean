@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Events</title>
+</head>
+<body>
+    <button onclick="alert('Hi I m clicked')">Click Me</button>
+
+    <button onclick="myHandler()">Another Button</button>
+
+    <p>Hello JS World</p>
+
+
+    <script>
+    
+    function myHandler() {
+        alert('Executed My Function');
+    }
+
+
+    var para = document.querySelector('p');
+
+    para.onclick = function() {
+        alert('para clicked');
+    }
+
+    para.onclick = function() {
+        alert('second Handler')
+    }
+
+    
+    </script>
+
+</body>
+</html>

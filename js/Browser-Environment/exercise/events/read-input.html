@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Name : <input type="text" name="name"  id="">
+        Password : <input type="text" name="password">
+        <button>Submit</button>
+        
+    </form>
+   
+    <script>
+    var btn = document.querySelector('button');
+    var inp1 = document.querySelector('input');
+
+    
+
+    btn.onclick = function (){
+        console.log('Hello handler registered');
+        var inp1 = document.querySelectorAll('input[type=text]');
+        console.log(inp1)
+
+        inp1.forEach(function(elem, index, arr) {
+            console.log(elem.value)
+        })
+    }    
+    </script>   
+
+
+
+
+</body>
+</html>

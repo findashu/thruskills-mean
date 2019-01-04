@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Walk Dom</title>
+</head>
+
+<body>
+    <h1>Walk DOM</h1>
+    <p>WAP to walk through dom</p>
+    <p>WAP to walk through dom</p>
+
+
+    <script>
+        function walkDom(n) {
+            // your code goes here
+            do {
+                console.log(n);
+                if (n.hasChildNodes()) {
+                    //console.log(n.firstChild)
+                    walkDom(n.firstChild)
+                }
+            } while (n = n.nextSibling);
+        }
+ 
+        walkDom(document.documentElement)
+
+    </script>
+</body>
+
+</html>

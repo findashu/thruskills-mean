@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+.container {
+    background-color: grey;
+    padding:10px;
+}
+
+.box {
+    width :calc(25% - 24px);
+    border : 2px solid white;
+    padding: 10px;
+    float:left;
+}
+
+.box h2 {
+    margin-bottom:10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.clear {
+    clear:both;
+}
+

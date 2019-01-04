@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+    h1 {
+        font-size:20px;
+        color:aqua
+    }
+
+    #firstPara {
+        border: 1px solid gray;
+        font-size: 16px;
+    }
+
+
+    .head2 {
+        background-color: antiquewhite;
+        color: blue;
+    }
+
+    .fw {
+        font-weight: 200;
+        font-size : 15px;
+    }
+    
+    
+    </style>
+
+
+
+</head>
+<body>
+    <h1>CSS Syntax</h1>
+    <p>CSS is composed of style rules that the browser interprets and then applies to the corresponding elements in your document</p>
+    <p id="firstPara">A style rule has 3 parts: <strong>selector</strong>, <strong>property</strong>, <strong>value</strong></p>
+    <code>
+        h1 {color :orange;}
+    </code>
+
+    <h2 class="head2 fw">Type Selectors</h2>
+
+    <h2 class="head2"> Second Heading</h2>
+
+
+    <p class="head2">The most common and easy to understand selectors are type selectors. This selector targets element types on the page.</p>
+
+    <h2>id and class</h2>
+    <p>id selectors allow you to style an HTML element that has an id attribute, regardless of their position in the document tree.</p>
+    <p>Class selectors work in a similar way. The major difference is that id's can be applied once per page</p>
+
+
+    <h2>Descendant Selectors</h2>
+    <p>These selectors are used to select elements that are descendants of another element. When selecting levels, you can select as many deep levels deep as you want to</p>
+
+</body>
+</html>

@@ -1,6 +1,10 @@
 // “Streams are Node’s best and most misunderstood idea.”
 // — Dominic Tarr
 
+// Streams are objects that lets you read data from a source or write data to the destination in a continuous fashion.
+
+// Stream in Node.js simply means a sequence of data being moved from one point to the other over time. The whole concept is, you have a huge amount of data to process, but you don’t need to wait for all the data to be available before you start processing it.
+
 // reading File
 
 const fs  = require('fs');
@@ -11,7 +15,7 @@ const fs  = require('fs');
 //     if(error) {
 //        return console.log(error)
 //     }
-//     // console.log(data)
+     // console.log(data)
 // });
 
 //synchronous
@@ -22,7 +26,6 @@ const fs  = require('fs');
 
 // } catch (error) {
 //     console.log('Got error', error)
-   
 // }
 
 // Writing to a file
@@ -36,7 +39,7 @@ const fs  = require('fs');
 
 // fs.writeFileSync(__dirname+'/message.txt', 'Hello Node.js');
 
-// fs.readdir(__dirname, (err, data) => {
-//     if (err) throw err
-//     console.log(data);
-// })
+fs.readdir(__dirname, (err, data) => {
+    if (err) throw err
+    console.log(data);
+})

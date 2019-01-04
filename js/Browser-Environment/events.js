@@ -51,7 +51,6 @@ e.stopPropagation();
 
 // Prevent default behavior
 
-
 // Some browser events have a predefined behavior. For example, clicking a link causes the browser to navigate to another page. You can attach listeners to clicks on a link, and you can also disable the default behavior by calling the preventDefault() method on the event object.
 
 function (e) { // handler
@@ -65,21 +64,37 @@ function (e) { // handler
 
 // Mouse events
 
-// mouseup, mousedown, click (the sequence is mousedown-up-click), dblclick mouseover (mouse is over an element), mouseout (mouse was over an element but left it), mousemove
+// mouseup,
+// mousedown, click (the sequence is mousedown-up-click), 
+// dblclick 
+// mouseover (mouse is over an element), 
+// mouseout (mouse was over an element but left it), 
+// mousemove
 
 // Keyboard events
-// keydown, keypress, keyup (occur in this sequence)
+
+// keydown, 
+// keypress, 
+// keyup (occur in this sequence)
 
 // Loading/window events
-// load (an image or a page and all of its components are done loading), unload (user leaves the page), beforeunload (the script can provide the user with an option to stop the unload)
 
-// abort (user stops loading the page or an image in IE), error (a JavaScript error, also when an image cannot be loaded in IE)
+// load (an image or a page and all of its components are done loading), 
+// unload (user leaves the page), 
+// beforeunload (the script can provide the user with an option to stop the unload)
+// abort (user stops loading the page or an image in IE), 
+// error (a JavaScript error, also when an image cannot be loaded in IE)
 
 // resize (the browser window is resized), scroll (the page is scrolled), contextmenu (the right-click menu appears)
 
 // Form events
-// focus (enter a form field), blur (leave the form field)
-// change (leave a field after the value has changed), select (select text in a text field) reset (wipe out all user input), submit (send the form)
+
+//  focus (enter a form field), 
+//  blur (leave the form field)
+//  change (leave a field after the value has changed), 
+//  select (select text in a text field) 
+//  reset (wipe out all user input), 
+//  submit (send the form)
 
 
 // Additionally, modern browsers provide drag events (dragstart, dragend, drop, and among others) and touch devices provide touchstart, touchmove, and touchend.

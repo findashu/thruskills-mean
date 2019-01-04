@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    var heading = document.createElement('h1');
+    heading.innerText = 'List of Cars';
+    var ul = document.createElement('ul');
+
+   
+
+    document.body.appendChild(ul);
+
+    document.body.insertBefore(heading, ul);
+
+
+    var myCars = ['BMW', 'Mercedes', 'Maruti'];
+
+    for(var i =0; i < myCars.length; i++) {
+        var li = document.createElement('li');
+        li.innerText = myCars[i];
+        ul.appendChild(li);
+    }
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

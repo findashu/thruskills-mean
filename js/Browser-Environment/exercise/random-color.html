@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Color</title>
+</head>
+<body>
+    <p id="first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
+
+    <p id = "second">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
+
+    <p id = "third">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
+
+
+    <script>
+    function random(n) {
+        return Math.floor(Math.random()*n)
+    }
+
+    function changeColor() {
+        // var firstPara = document.getElementById('first')
+        // firstPara.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+        
+        // var secondPara = document.getElementById('second');
+        // secondPara.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+
+        // var thirdPara = document.getElementById('third');
+        // thirdPara.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+
+        var paraArr = document.querySelectorAll('p');
+
+
+        paraArr.forEach(function(ele) {
+            ele.style.backgroundColor = `rgb(${random(255)},${random(255)},${random(255)})`;
+        })
+        console.log(paraArr[0].style.cssText)
+
+    }
+    
+    setInterval(changeColor, 1000);
+    
+    </script>
+
+
+
+</body>
+</html>
