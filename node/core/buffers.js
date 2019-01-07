@@ -16,7 +16,7 @@ var buf = Buffer.alloc(10);
 
 console.log(Buffer.isBuffer(buf));
 
-//console.log(buf.toString());
+//console.log(buf.toString()); 
 
 //You can also create a buffer using an array.
 //This initializes the buffer to the contents of this array. Keep in mind that the contents of the array are integers representing bytes.

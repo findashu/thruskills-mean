@@ -43,3 +43,13 @@ fs.readdir(__dirname, (err, data) => {
     if (err) throw err
     console.log(data);
 })
+
+// append file
+// In cases where we just want to add to a file’s contents, we can use the fs.appendFile high level method and its synchronous counterpart, fs.appendFileSync. Using the fs.appendFile creates the file if it does not exist, and appends to the file otherwise.
+
+fs.appendFile('filepath', 'data to append', (err) => {
+    if(err){
+        console.log(err)
+    }
+    console.log('Done writing')
+})

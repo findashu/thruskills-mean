@@ -1,0 +1,1 @@
+Passing a number as the first argument to Buffer() (e.g. new Buffer(10)) allocates a new Buffer object of the specified size. Prior to Node.js 8.0.0, the memory allocated for such Buffer instances is not initialized and can contain sensitive data. Such Buffer instances must be subsequently

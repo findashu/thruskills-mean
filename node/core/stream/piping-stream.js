@@ -6,7 +6,7 @@ let readerStream = fs.createReadStream(__dirname+'/input.txt');
 
 // Create a write stream
 
-let writeStream = fs.createWriteStream(__dirname+'/output.txt');
+let writeStream = fs.createWriteStream('../events/output.txt');
 
 // pipe read and write 
 
