@@ -30,6 +30,7 @@ function add (a, b ){
  return a+b;   
 }
 
-(a,b) => a+b ;
 
-//Arrow Functions
+// Key Difference with FAT arrow functions and function declaration
+
+// Fat arrow keeps its context where it defines.

@@ -26,7 +26,7 @@
 
 ## Statements
 
-    A statement is an instruction to perform a specific action. Such actions include creating a variable or a function, looping through an array of elements, evaluating code based on a specific condition etc. JavaScript programs are actually a sequence of statements.
+    A statement is an instruction to perform a specific action. Such actions include creating a variable or a function, looping through an array of elements, evaluating code based on a specific condition etc. JavaScript programs are actually a collection of statements.
 
 ### Declaration Statements:
     Such type of statements create variables and functions by using the var and function statements respectively. Examples include
