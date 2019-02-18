@@ -15,6 +15,4 @@
 
 // Group of documents called collection. Same as table in RDBMS.
 
-// Mongodb
-// Rethink Db
 
