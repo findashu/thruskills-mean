@@ -16,3 +16,17 @@ finally {
 }
 
 console.log('hello')
+
+
+
+/**
+ * Create an index on the db and collection.
+ *
+ * @method
+ * @param {Collection} a Collection instance.
+ * @param {(string|object)} fieldOrSpec Defines the index.
+ * @param {object} [options] Optional settings. See Collection.prototype.createIndex for a list of options.
+ * @param {Collection~resultCallback} [callback] The command result callback
+ * @return 
+ * @author Ashutosh
+ */
