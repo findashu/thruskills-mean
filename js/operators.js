@@ -25,8 +25,8 @@
     // 1. Remainder %
     // 2. Increment ++
     // 3. Decrement --
-    // 4. Unary negation -x
-    // 5. Unary Plus +x
+    // 4. Unary negation -x(It also precedes the operand and converts non-numbers data types to numbers like unary plus, however, it performs an additional operation, negation)
+    // 5. Unary Plus +x (This operator precedes the operand and tries to convert it to a number)
 
 // Logical Operators
 
