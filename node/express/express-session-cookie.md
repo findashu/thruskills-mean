@@ -1,5 +1,5 @@
-##Cookie
-==========
+## Cookie
+
 A cookie is usually a small piece of data that gets sent between a web server to your web browser. It allows the server to store information relevant to a specific user. 
 
 One common use for cookies is to store session data. This works in the following way.
@@ -11,8 +11,8 @@ When a user makes a subsequent request to the web server, this cookie gets sent 
 The server can manipulate the cookie if it needs to, and then sends it back to the browser.
 
 
-##Session
-===========
+## Session
+
 Data is stored on the server side.
 
 A cookie is issued which contains an ID.
@@ -23,7 +23,7 @@ Now the server can re-associate the ID in the cookie - commonly called Session I
 
 Where this data gets stored on the server
 
-###MemoryStore
+### MemoryStore
 
 Express comes with a built-in session store called MemoryStore, which is the default when you don’t specify one explicitly.
 
