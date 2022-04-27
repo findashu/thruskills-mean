@@ -67,16 +67,16 @@ Each request can be modeled as doing a specific action on a resource. For exampl
 **PUT**
 
 * Used to update existing resource on server.
-* Similar to POST req
+* Either creates or replaces the resource at the specified URI
 
 
 **PATCH**
 
-* Used to apply partial modifications to the resource.
+* Used to perform partial update of a resource.
 
 **Delete**
 
-* The DELETE method requests that the origin server delete the resource identified by the Request-URI.
+* Removes the resource at the specified URI.
 
 
 ## Status Code
