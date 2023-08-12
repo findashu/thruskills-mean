@@ -9,6 +9,9 @@
 
 ## In Production 
     npm i --production (to install only dependencies not devDependency)
+
+    use - npm i --omit=dev
+    
     npm prune --production (clear devDepencies)
 
     
